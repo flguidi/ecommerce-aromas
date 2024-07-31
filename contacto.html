@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>ap | Contacto</title>
+</head>
+
+<body class="contacto">
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <a href="index.html"><img src="img/logo-1.png" alt="Logo AP" id="logo-1"></a>
+
+        <!-- Barra de navegación -->
+        <nav>
+            <ul class="menu">
+                <li class="item">
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="item">
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li class="item">
+                    <a href="contacto.html">Contacto</a>
+                </li>  
+            </ul>
+
+            <div class="menu-desplegable icono">
+                <img src="img/iconos/menu-abrir.svg" class="icono" id="icono-menu" alt="Menú">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="contacto">
+        <h1>¿Te gustaría emprender con AP?</h1>
+
+        <h2>Registrá tus datos para que podamos informarte cómo podés ser parte de nosotros</h2>
+    
+        <div class="contenedor">
+            <form id="form">
+                <div class="contenedor-form">
+                    <!-- Fila 1 -->
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+        
+                    <!-- Fila 2 -->
+                    <input type="number" name="telefono" id="telefono" placeholder="Teléfono" required>
+                    <input type="text" name="ciudad" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+        
+                    <select name="provincia" id="provincia">
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="CABA">CABA</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    </select>
+        
+                    <!-- Fila 3 -->
+                    <div class="checkbox-label">
+                        <input type="checkbox" name="productos-catalogo" id="productos-catalogo" value="productos-catalogo"/>
+                        <label for="productos-catalogo">Vender por catálogo</label>
+                    </div>
+        
+                    <!-- Fila 4 -->
+                    <div class="checkbox-label">
+                        <input type="checkbox" name="productos-local" id="productos-local" value="productos-local"/>
+                        <label for="productos-local">Incorporar productos en mi local</label>
+                    </div>
+        
+                    <!-- Fila 3 y 4 -->
+                    <div class="contenedor-textarea">
+                        <textarea name="mensaje" id="mensaje"
+                            placeholder="Podés escribir tus consultas acá"></textarea>
+                    </div>
+                    
+                    <!-- Fila 5 -->
+                    <div class="contenedor-captcha">
+                        <h3>Captcha</h3>
+                        <p>Para enviar tu solicitud, ingresá los caracteres que se muestran a continuación:</p>
+                        <div class="captcha">
+                            <p id="captcha-aleatorio"></p>
+                            <img src="img/iconos/refresh.svg" alt="Recargar captcha" class="icono" id="recargar-captcha">
+                        </div>
+                        <input type="text" id="captcha-input">
+                        <button>ENVIAR</button>
+                        <p id="resultado"></p>
+                    </div>
+                </div>
+            </form>
+        
+            <div class="contenedor-imagen">
+                <img src="img/mayoristas.png" alt="Mayoristas">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p id="direccion-local">&#128205; Rodríguez 123, Las Leñas (CP 1234), Buenos Aires, Argentina</p>
+
+        <nav class="social">
+            <ul>
+                <li>
+                    <a href="#" target="_self" class="icono">
+                        <img src="img/iconos/instagram.svg" alt="Instagram" class="icono">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_self" class="icono">
+                        <img src="img/iconos/facebook.svg" alt="Facebook" class="icono">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_self" class="icono">
+                        <img src="img/iconos/mail.svg" alt="E-Mail" class="icono">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_self" class="icono">
+                        <img src="img/iconos/whatsapp.svg" alt="Whatsapp" class="icono">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
